@@ -15,4 +15,5 @@
 (function() {
     'use strict';
     Array.from(document.getElementsByTagName("button")).find(e => e.innerText === 'Riverian verkon tunnus').click();
+    // test update comment
 })();
