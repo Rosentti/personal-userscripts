@@ -1,0 +1,108 @@
+/* ==UserStyle==
+@name           11/4/2022, 9:51:18 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.1
+@description    A new userstyle
+@author         Me
+@updateURL      https://github.com/20PercentRendered/personal-userscripts/raw/master/wilmastyles.user.css
+==/UserStyle== */
+
+@-moz-document domain("riveria.inschool.fi") {
+    body {
+        --primary-color: #121212;
+        --secondary-color: #0d0d0d;
+        --tertiary-color: #171717;
+        --brand-color: #e30713;
+        --primary-text: white;
+    }
+    body, button, label {
+        color: var(--primary-text);
+    }
+    .navbar {
+        margin-top: 16px;
+        margin-left: 12px;
+        margin-right: 12px; 
+        background: var(--brand-color);
+        border-radius: 16px;
+    }
+    .form-control {
+        color: var(--primary-color) !important;
+    }
+    
+    .nav-tabs:not(.navbar-nav) > li > a {
+        background: var(--brand-color);
+        border-radius: 8px 8px 8px 8px;
+    }
+    
+    .nav-tabs:not(.navbar-nav) {
+        margin-bottom: 4px;
+    }
+    
+    .nav-tabs:not(.navbar-nav) > li > a::before, .nav-tabs:not(.navbar-nav) > li > a::after {
+        content: none;
+    }
+    
+    .nav-tabs:not(.navbar-nav) > li.active:not(.tabdrop) > a::after {
+        content: none;
+    }
+    
+    .nav-tabs:not(.navbar-nav) > li.active:not(.tabdrop) > a {
+        background: blue !important;
+    }
+    
+    .panel {
+        border-radius: 32px;
+        background: var(--tertiary-color);
+        border-width: 0px;
+        color: var(--primary-text);
+    }
+    
+    .panel .panel-side {
+        background-color: var(--tertiary-color); 
+        border-left: 0px solid var(--primary-color); 
+        border-radius: 32px;
+        color: var(--primary-text);
+    }
+    
+    .alert {
+        border-width: 0px; 
+        color: inherit;
+        background-color: var(--primary-color);
+    }
+    
+    .table > tbody {
+        background-color: transparent; 
+    }
+    
+    .table > tbody > tr:nth-child(2n+1) > td, .table > tbody > tr:nth-child(2n+1) > th {
+        background-color: var(--primary-color);
+    }
+    
+    .frontpage .calendar-block table.vismaDatePickerCalendar td.no-events {
+        background: var(--secondary-color)
+    }
+    
+    table.vismaDatePickerCalendar th span, table.vismaDatePickerCalendar td span, table.vismaDatePickerCalendar th a, table.vismaDatePickerCalendar td a {
+        color: var(--primary-text);
+    }
+    
+    .modal-content {
+        border-radius: 32px; 
+        background-color: var(--secondary-color); 
+    }
+    
+    .modal-header {
+        box-shadow: none; 
+        background-color: var(--secondary-color); 
+        border-radius: 32px 32px 0px 0px; 
+    }
+       
+    .modal-title {
+        color: inherit;
+    }
+    
+    body {
+        background-color: var(--secondary-color);
+        color: var(--primary-text);
+    }
+}
