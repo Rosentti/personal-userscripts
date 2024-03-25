@@ -7,6 +7,8 @@
 // @match        https://riveria.inschool.fi/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=riveria.fi
 // @grant        unsafeWindow
+// @downloadURL  https://github.com/20PercentRendered/personal-userscripts/raw/master/wilma-adblock.user.js
+// @updateURL    https://github.com/20PercentRendered/personal-userscripts/raw/master/wilma-adblock.user.js
 // @run-at  document-start
 // ==/UserScript==
 
